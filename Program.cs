@@ -70,7 +70,11 @@ app.MapGet("/", async (AppDbContext dbContext, ILogger<Program> logger) =>
 
         var count = await dbContext.Entries.CountAsync();
 
-        return Results.Ok(new { Message = "Entry added successfully with random data.", Data = randomData, Count = count });
+        return Results.Ok(new {
+            Message = "This is a simple, basic .NET application running on Zerops.io, each request adds an entry to the PostgreSQL database and returns a count. See the source repository (https://github.com/zeropsio/recipe-dotnet) for more information.",
+            Data = randomData,
+            Count = count
+        });
     }
     catch (Exception ex)
     {
