@@ -1,0 +1,25 @@
+zerops:
+  - setup: api
+    build:
+#      os: ubuntu
+      base: dotnet@6
+      buildCommands:
+        - dotnet build -o app
+      deployFiles: app/~
+    run:
+#      os: ubuntu
+      base: dotnet@6
+      start: dotnet dotnet.dll
+      ports:
+        - port: 5000
+          httpSupport: true
+      envVariables:
+        DB_NAME: db
+        DB_HOST: ${db_hostname}
+        DB_PORT: ${db_port}
+        DB_USER: ${db_user}
+        DB_PASS: ${db_password}
+      healthCheck:
+        httpGet:
+          port: 5000
+          path: /status
