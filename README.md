@@ -1,7 +1,9 @@
 # Zerops x .NET
-This is the most bare-bones example of .NET app running on Zerops.
+This is the most bare-bones example of .NET app running on [Zerops](https://zerops.io).
 
 ![dotnet](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-dotnet.png)
+
+<br />
 
 ## Deploy on Zerops
 You can either click the deploy button to deploy directly on Zerops, or manually copy the [import yaml](https://github.com/zeropsio/recipe-dotnet/blob/main/zerops-project-import.yml) to the import dialog in the Zerops app.
@@ -33,5 +35,8 @@ Further things to think about when running more complex, highly available .Net p
 - Use Zerops Redis (KeyDB) for caching, storing sessions and pub/sub messaging
 - Use more advanced logging lib, such as [NLog](https://github.com/NLog/NLog) or [Serilog](https://github.com/serilog/serilog)
 
+<br/>
+<br/>
 
+Need help setting your project up? Join [Zerops Discord community](https://discord.com/invite/WDvCZ54).
 
