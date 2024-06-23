@@ -1,5 +1,5 @@
 # Zerops x .NET
-This is the most bare-bones example of .NET app running on [Zerops](https://zerops.io).
+This is the most bare-bones example of .NET app running on [Zerops](https://zerops.io) — as few libraries as possible, just a simple endpoint with connnect, read and write to a Zerops PostgreSQL database.
 
 ![dotnet](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-dotnet.png)
 
@@ -13,14 +13,15 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 </a>
 
 <br/>
-<br/>
 
 ## Recipe features
-- **.Net 6** on **Zerops .Net** service
+- **.NET 6** app  **Zerops .Net** service
 - Zerops **PostgreSQL 16** service as database
 - Healthcheck setup example
 - Utilization of Zerops' built-in **environment variables** system
 - Utilization of Zerops' built-in **log management**
+
+<br/>
 
 ## Production vs. development
 
