@@ -7,7 +7,7 @@ services:
   - hostname: api
     type: dotnet@6
     enableSubdomainAccess: true
-    buildFromGit: https://github.com/zeropsio/dotnet
+    buildFromGit: https://github.com/zeropsio/recipe-dotnet
 
   - hostname: db
     type: postgresql@16
